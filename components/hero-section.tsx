@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from "react"
-import Link from "next/link"
-import { ArrowRight, Leaf, Heart } from "lucide-react"
+import { useEffect, useState } from "react";
+import Link from "next/link";
+import { ArrowRight, Leaf, Heart } from "lucide-react";
 
 export function HeroSection() {
-  const [isVisible, setIsVisible] = useState(false)
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    setIsVisible(true)
-  }, [])
+    setIsVisible(true);
+  }, []);
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
@@ -23,10 +23,16 @@ export function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-24">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Text Content */}
-          <div className={`space-y-8 ${isVisible ? "animate-fade-in-up" : "opacity-0"}`}>
+          <div
+            className={`space-y-8 ${
+              isVisible ? "animate-fade-in-up" : "opacity-0"
+            }`}
+          >
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary rounded-full">
               <Leaf className="w-4 h-4 text-accent" />
-              <span className="text-xs font-medium text-muted-foreground">Eco-Engineered Performance Wear</span>
+              <span className="text-xs font-medium text-muted-foreground">
+                Eco-Engineered Performance Wear
+              </span>
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground leading-[1.1]">
@@ -35,8 +41,8 @@ export function HeroSection() {
             </h1>
 
             <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
-              Where high-performance compression wear meets eco-innovation. Crafted from recycled fibres, engineered for
-              excellence.
+              Where high-performance compression wear meets eco-innovation.
+              Crafted from recycled fibres, engineered for excellence.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -59,18 +65,24 @@ export function HeroSection() {
             <div className="inline-flex items-center gap-3 pt-4">
               <div className="flex items-center gap-2 px-4 py-2 bg-card rounded-full border border-border">
                 <Heart className="w-4 h-4 text-accent" />
-                <span className="text-sm font-medium">55% profits to girl-child education</span>
+                <span className="text-sm font-medium">
+                  55% profits to girl-child education
+                </span>
               </div>
             </div>
           </div>
 
           {/* Hero Images */}
-          <div className={`relative ${isVisible ? "animate-scale-in animation-delay-200" : "opacity-0"}`}>
+          <div
+            className={`relative ${
+              isVisible ? "animate-scale-in animation-delay-200" : "opacity-0"
+            }`}
+          >
             <div className="relative">
               {/* Main Image */}
               <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/images/whatsapp-20image-202025-11-28-20at-208.jpeg"
+                  src="/images/hoodie1.jpeg"
                   alt="AERONYX White Compression Tee - Athletic performance wear"
                   className="w-full h-full object-cover"
                 />
@@ -79,7 +91,7 @@ export function HeroSection() {
               {/* Floating secondary image */}
               <div className="absolute -bottom-8 -left-8 w-40 h-40 rounded-xl overflow-hidden shadow-xl animate-float animation-delay-600">
                 <img
-                  src="/images/whatsapp-20image-202025-11-28-20at-208.jpeg"
+                  src="/images/hoodie2.jpeg"
                   alt="AERONYX Brown Hoodie - Eco-friendly comfort wear"
                   className="w-full h-full object-cover"
                 />
@@ -89,5 +101,5 @@ export function HeroSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

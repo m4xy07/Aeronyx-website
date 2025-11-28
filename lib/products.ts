@@ -28,9 +28,9 @@ export const products: Product[] = [
       "Quick-dry technology",
     ],
     images: [
-      "/images/whatsapp-20image-202025-11-28-20at-208.jpeg",
-      "/images/whatsapp-20image-202025-11-28-20at-208.jpeg",
-      "/images/whatsapp-20image-202025-11-28-20at-208.jpeg",
+      "/images/tee3.jpeg",
+      "/images/tee2.jpeg",
+      "/images/tee1.jpeg",
     ],
     category: "Compression",
     sizes: ["S", "M", "L", "XL", "XXL"],
@@ -52,8 +52,8 @@ export const products: Product[] = [
       "Kangaroo pocket design",
     ],
     images: [
-      "/images/whatsapp-20image-202025-11-28-20at-208.jpeg",
-      "/images/whatsapp-20image-202025-11-28-20at-208.jpeg",
+      "/images/hoodie2.jpeg",
+      "/images/hoodie1.jpeg",
     ],
     category: "Comfort",
     sizes: ["S", "M", "L", "XL", "XXL"],
